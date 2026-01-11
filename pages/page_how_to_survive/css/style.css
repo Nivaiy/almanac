@@ -107,6 +107,37 @@ html, body {
     animation: fadeOut 1.2s ease forwards;
 }
 
+.media-block {
+    position: relative;      /* ЯКІР */
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.media-block .base-img {
+    width: 100%;
+    display: block;
+    image-rendering: pixelated;
+}
+
+.media-block .overlay-img {
+    position: absolute;
+    top: 10px;               /* рухай як хочеш */
+    left: 10px;
+
+    width: 64px;             /* розмір оверлею */
+    image-rendering: pixelated;
+}
+
+/* якщо хочеш текст */
+.media-block .overlay-text {
+    position: absolute;
+    font-family: "Tiny5", sans-serif;
+    font-size: 24px;
+    color: black;
+    padding: 4px 6px;
+}
+
 @keyframes fadeOut {
     from {
         opacity: 1;
@@ -122,4 +153,13 @@ html, body {
     font-family: "Tiny5", sans-serif;
     right: 25px;
     top : 150px ;
+}
+
+#mb1 {
+    width: 250px;
+    height: auto;
+}
+#mbt1 {
+    top: -25px;
+    left: 250px;
 }
